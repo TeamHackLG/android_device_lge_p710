@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/lge/l7/BoardConfigVendor.mk
+-include vendor/lge/p710/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -25,8 +25,8 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/lge/l7/kernel
+TARGET_PREBUILT_KERNEL := device/lge/p710/kernel
 
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/l7/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p710/recovery/graphics.c
 BOARD_HAS_NO_SELECT_BUTTON := true

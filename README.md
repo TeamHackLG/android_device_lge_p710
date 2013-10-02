@@ -1,1 +1,1 @@
-LG Optimus L7
+LG Optimus L7 P710/P715
