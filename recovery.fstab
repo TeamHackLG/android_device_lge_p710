@@ -1,14 +1,10 @@
 # mount point	                                  fstype	   device			[device2]		[length=]
 
-/dev/block/platform/msm_sdcc.3/by-num/p14         /system      ext4    ro,barrier=1,noatime                          wait
-/dev/block/platform/msm_sdcc.3/by-num/p20         /data        ext4    nosuid,nodev,noatime,barrier=1,noauto_da_alloc,errors=continue      check
-/dev/block/platform/msm_sdcc.3/by-num/p9          /boot        emmc    defaults                                     defaults
-/dev/block/platform/msm_sdcc.3/by-num/p17         /recovery    emmc    defaults                                     defaults
-/dev/block/platform/msm_sdcc.3/by-num/p15         /persist     ext4    nosuid,nodev,barrier=1                       wait,check
-/dev/block/platform/msm_sdcc.3/by-num/p16         /cache       ext4    nosuid,nodev,barrier=1                       wait,check
-/dev/block/platform/msm_sdcc.3/by-num/p18         /persist-lg  ext4    nosuid,nodev,barrier=1                       wait,check
-/dev/block/platform/msm_sdcc.3/by-num/p23         /mpt         ext4    nosuid,nodev,barrier=1                       wait,check
-
-# External SD
-/devices/platform/msm_sdcc.1/mmc_host/mmc1        /storage/sdcard1 vfat defaults voldmanaged=external_sd:auto
+/boot		emmc		/dev/block/mmcblk0p9
+/cache		ext4		/dev/block/mmcblk0p16
+/data		ext4		/dev/block/mmcblk0p20   length=-16384
+/misc		emmc		/dev/block/mmcblk0p8
+/recovery	emmc		/dev/block/mmcblk0p17
+/sdcard		vfat		/dev/block/mmcblk1 /dev/block/mmcblk1p1
+/system		ext4		/dev/block/mmcblk0p14
 
